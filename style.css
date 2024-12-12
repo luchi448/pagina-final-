@@ -1,0 +1,320 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #bb88f4;
+     background-position: top center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background-image: url(imagenes/violeta.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #bb88f4;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li {
+    background-color: #bb88f4;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    display: none;
+    cursor: pointer;
+}
+
+.header-info h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.header-info p {
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-image: url(imagenes/violeta.png);
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #b38ae4;
+}
+
+.arte {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.arte-1 {
+    width: 50%;
+    padding-right: 150px;
+}
+
+.arte-1 h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.arte-1 p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.arte-1 span {
+    color: #000000;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 45px;
+    border-radius: 20px;
+    background-image: url(imagenes/violeta.png);
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+
+.btn-2:hover {
+    background-color: #bb88f4;
+}
+
+.img-1 {
+    
+    width: 250px;
+    margin-right: 30px;
+
+}
+
+.img-2 {
+    width: 250px;
+    margin-right: 30px;
+    
+}
+
+.img-3 {
+    width: 250px;
+    margin-right: 30px;
+    
+}
+
+.img-4 {
+    width: 250px;
+    margin-right: 30px;
+    
+}
+
+.img-5 {
+    width: 250px;
+    margin-right: 30px;
+
+}
+
+.img-6 {
+    width: 250px;
+    height: 30px;
+    
+}
+
+.img-7 {
+    width: 250px;
+    margin-right: 30px;
+    
+}
+
+.img-8 {
+    width: 250px;
+    margin-right: 30px;
+    
+}
+
+.footer {
+    border-top: 1px solid #ffffff;
+    padding: 50PX 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #bb88f4;
+}
+
+.footer h3 {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links ul li {
+    margin-right: 35px;
+}
+
+.links ul li a {
+    color: #000000;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%
+        left: 0%;
+        right: 0;
+        background-color: #818181;
+        display: none;
+
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+    }
+
+    .header-info h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .arte {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .arte-1 {
+        width: 100%;
+        padding: 0%;
+        order: 1;
+    }
+
+    .arte-1 h2 {
+        margin-bottom: 15px;
+    }
+
+    .btn-2 {
+        margin-bottom: 35px;
+    }
+
+    .arte-2 {
+        order: 2;
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer h3 {
+        margin-bottom: 15px;
+    }
+
+    .links ul li {
+        margin: 0 10px;
+    }
+        
+
